@@ -26,19 +26,19 @@ class Header extends Component {
       <div>
         <ul className="nav nav-tabs bg-light">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to={"/"}>
               Accueil
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/ressources">
+            <Link className="nav-link" to={"/ressources"}>
               Ressources
             </Link>
           </li>
           <li className="nav-item">
             <Link
               className="nav-link"
-              href="#"
+              to={"#"}
               onClick={onClickAutentification}
             >
               {renderAuthentificationLabel()}
