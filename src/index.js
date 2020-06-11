@@ -5,11 +5,15 @@ import App from "./components/app";
 import * as serviceWorker from "./serviceWorker";
 import thunk from "redux-thunk";
 import reducers from "./reducers";
+import { actionCounter } from "./middlewares/action-counter";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+const createStoreWithMiddleware = applyMiddleware(
+  thunk,
+  actionCounter
+)(createStore);
 
 ReactDOM.render(
   <Provider
