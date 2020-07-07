@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../containers/header";
 import Home from "../components/home";
-import Ressources from "../components/ressources";
+import Ressources from "../containers/ressources";
 import { Route, Switch } from "react-router-dom";
 import RequireAuthentification from "../helpers/require-authentification";
 const App = () => {
